@@ -2,11 +2,13 @@
   "name": "trilha-react",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://DiegoNunes05.github.io//trilha-react/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "publicar": "npm run build && gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,7 @@
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.1",
     "react-refresh": "^0.14.0",
